@@ -12,6 +12,8 @@ namespace Calculator
             Console.WriteLine("Press 1 for Addition");
 
             Console.WriteLine("Press 2 for Division");
+            
+            Console.WriteLine("Press 3 for Multiplication");
 
             int action = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter 1st input");
