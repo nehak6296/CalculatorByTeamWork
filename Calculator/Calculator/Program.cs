@@ -6,12 +6,13 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Calculator");
+          Console.WriteLine("Welcome to Calculator");
+
             Console.WriteLine("Enter the action to be performed");
-            Console.WriteLine("Press 1 for Division");
-            Console.WriteLine("Press 2 for Subtraction");
-            Console.WriteLine("Press 3 for Multiplication");
-            Console.WriteLine("Press 4 for Addition \n");
+            Console.WriteLine("Press 1 for Addition");
+
+            Console.WriteLine("Press 2 for Division");
+
             int action = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter 1st input");
             int input_1 = Convert.ToInt32(Console.ReadLine());
@@ -21,8 +22,16 @@ namespace Calculator
             switch (action)
             {
                 case 1:
+
+                    {
+                        result = Addition(input_1, input_2);
+                        break;
+                    }
+              case 2:
+
                     { 
                         result = Division(input_1, input_2);
+
                         break;
                     }
                 default:
@@ -31,6 +40,17 @@ namespace Calculator
             }
             Console.WriteLine("The result is {0}", result);
             Console.ReadKey();
+
+        }
+        //Addition  
+        public static int Addition(int input_1, int input_2)
+        {
+            int result = input_1 + input_2;
+            return result;
+        }
+    }
+       
+
         }
         //Division  
         public static int Division(int input_1, int input_2)
@@ -38,5 +58,5 @@ namespace Calculator
             int result = input_1 / input_2;
             return result;
         }
+
     }
-}
