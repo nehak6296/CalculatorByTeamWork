@@ -17,6 +17,9 @@ namespace Calculator
 
             Console.WriteLine("Press 4 for Multiplication");
 
+
+            Console.WriteLine("Press 5 for Modulation");
+
             int action = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter 1st input");
             int input_1 = Convert.ToInt32(Console.ReadLine());
@@ -50,6 +53,11 @@ namespace Calculator
                         result = Multiplication(input_1, input_2);
                         break;
                     }
+                case 5:
+                    {
+                        result = Modulation(input_1, input_2);
+                        break;
+                    }
                 default:
                     Console.WriteLine("Wrong action!! try again");
                     break;
@@ -74,6 +82,13 @@ namespace Calculator
         public static decimal Division(int input_1, int input_2)
         {
             decimal result = Convert.ToDecimal(input_1) / input_2;
+            return result;
+        }
+
+        //Modulation 
+        public static decimal Modulation(int input_1, int input_2)
+        {
+            decimal result = Convert.ToDecimal(input_1) % input_2;
             return result;
         }
     }
