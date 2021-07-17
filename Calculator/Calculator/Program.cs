@@ -117,7 +117,7 @@ namespace Calculator
 
         public static void Inputs()
         {
-            Console.WriteLine("Calculation Completed");
+            Console.WriteLine("Calculation Complete Finished");
         }
 
     }
