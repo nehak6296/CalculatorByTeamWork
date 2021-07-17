@@ -19,6 +19,7 @@ namespace Calculator
                 case 1:
                     {
                         result = Addition(input_1, input_2);
+                        Console.WriteLine(result);
                         break;
                     }
                 default:
