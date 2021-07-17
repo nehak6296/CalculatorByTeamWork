@@ -75,6 +75,8 @@ namespace Calculator
                 }
             }
 
+            MoreMethods.Inputs();
+
             Console.ReadKey();
 
         }
@@ -115,7 +117,7 @@ namespace Calculator
 
         public static void Inputs()
         {
-
+            Console.WriteLine("Calculation Complete Finished");
         }
 
     }
