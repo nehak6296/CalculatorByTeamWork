@@ -110,6 +110,7 @@ namespace Calculator
         public static decimal Modulation(int input_1, int input_2)
         {
             decimal result = Convert.ToDecimal(input_1) % input_2;
+            Console.WriteLine(result);
             return result;
         }
     }
